@@ -47,8 +47,8 @@ const translations = {
     plat_iphone_desc: "Full-featured app with AR scanning, photo management, and complete item organization.",
     plat_watch_title: "Apple Watch",
     plat_watch_desc: "Quick search and browse your inventory. Mark items as found right from your wrist.",
-    plat_widgets_title: "Home Screen Widgets",
-    plat_widgets_desc: "Recent items and quick search widgets in multiple sizes for instant access.",
+    plat_widgets_title: "iPad",
+    plat_widgets_desc: "Full iPad experience with large-screen layouts, multitasking support, and detailed inventory views.",
     plat_spotlight_title: "Spotlight Search",
     plat_spotlight_desc: "Find your items directly from iOS home screen search without opening the app.",
     // CTA
@@ -177,8 +177,8 @@ const translations = {
     plat_iphone_desc: "แอปเต็มรูปแบบพร้อมการสแกน AR จัดการรูปภาพ และจัดระเบียบสิ่งของอย่างครบถ้วน",
     plat_watch_title: "Apple Watch",
     plat_watch_desc: "ค้นหาและเรียกดูรายการสิ่งของได้อย่างรวดเร็ว ทำเครื่องหมายว่าพบแล้วจากข้อมือ",
-    plat_widgets_title: "วิดเจ็ตหน้าจอหลัก",
-    plat_widgets_desc: "วิดเจ็ตสิ่งของล่าสุดและค้นหาด่วนหลายขนาดเพื่อเข้าถึงทันที",
+    plat_widgets_title: "iPad",
+    plat_widgets_desc: "ประสบการณ์เต็มรูปแบบบน iPad พร้อมเลย์เอาต์จอใหญ่ รองรับมัลติทาสก์ และมุมมองรายการสิ่งของแบบละเอียด",
     plat_spotlight_title: "ค้นหา Spotlight",
     plat_spotlight_desc: "ค้นหาสิ่งของจากหน้าจอหลัก iOS โดยไม่ต้องเปิดแอป",
     // CTA
