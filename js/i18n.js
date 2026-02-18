@@ -100,7 +100,7 @@ const translations = {
     support_trouble_a2: "Check that iCloud is enabled in your device settings and that you're signed into the same Apple ID on all devices. Check Settings > Sync Status for details.",
     support_contact_title: "Contact Us",
     support_contact_text: "Can't find what you're looking for? Reach out to us:",
-    support_contact_email: "Email: support@itemspot.app",
+    support_contact_email: "Email: itemspot24@gmail.com",
     support_contact_response: "We typically respond within 24-48 hours.",
     // Privacy page
     privacy_title: "Privacy Policy",
@@ -128,7 +128,7 @@ const translations = {
     privacy_changes_text: "We may update this Privacy Policy from time to time. Changes will be reflected in the \"Last updated\" date above. Continued use of the App after changes constitutes acceptance of the updated policy.",
     privacy_contact_title: "Contact",
     privacy_contact_text: "If you have questions about this Privacy Policy, please contact us:",
-    privacy_contact_email: "Email: privacy@itemspot.app",
+    privacy_contact_email: "Email: itemspot24@gmail.com",
   },
   th: {
     // Nav
@@ -230,7 +230,7 @@ const translations = {
     support_trouble_a2: "ตรวจสอบว่าเปิดใช้ iCloud ในการตั้งค่าอุปกรณ์และลงชื่อเข้าใช้ Apple ID เดียวกันในทุกอุปกรณ์ ตรวจสอบ ตั้งค่า > สถานะการซิงค์ สำหรับรายละเอียด",
     support_contact_title: "ติดต่อเรา",
     support_contact_text: "หาคำตอบไม่เจอ? ติดต่อเราได้ที่:",
-    support_contact_email: "อีเมล: support@itemspot.app",
+    support_contact_email: "อีเมล: itemspot24@gmail.com",
     support_contact_response: "เราตอบกลับภายใน 24-48 ชั่วโมง",
     // Privacy page
     privacy_title: "นโยบายความเป็นส่วนตัว",
@@ -258,7 +258,7 @@ const translations = {
     privacy_changes_text: "เราอาจอัปเดตนโยบายความเป็นส่วนตัวนี้เป็นครั้งคราว การเปลี่ยนแปลงจะแสดงในวันที่ \"อัปเดตล่าสุด\" ด้านบน การใช้แอปต่อหลังจากมีการเปลี่ยนแปลงถือว่ายอมรับนโยบายที่อัปเดต",
     privacy_contact_title: "ติดต่อ",
     privacy_contact_text: "หากคุณมีคำถามเกี่ยวกับนโยบายความเป็นส่วนตัวนี้ กรุณาติดต่อเรา:",
-    privacy_contact_email: "อีเมล: privacy@itemspot.app",
+    privacy_contact_email: "อีเมล: itemspot24@gmail.com",
   }
 };
 
