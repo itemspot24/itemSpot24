@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Support — iTemSpot</title>
-  <meta name="description" content="Get help with iTemSpot. Find answers to common questions and troubleshooting tips.">
+  <meta name="description" content="Get help with iTemSpot. Find answers to common questions about AR scanning, voice search, privacy vault, and troubleshooting tips.">
   <meta name="theme-color" content="#0D9488">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📦</text></svg>">
+  <link rel="icon" type="image/jpeg" href="../images/itemSpot Icon.jpg">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -15,12 +15,13 @@
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
       <a href="../index.html" class="nav-logo" aria-label="iTemSpot Home">
-        <span>📦</span> iTemSpot
+        <img src="../images/itemSpot Icon.jpg" alt="iTemSpot icon"> iTemSpot
       </a>
       <ul class="nav-links">
         <li><a href="../index.html#features" data-i18n="nav_features">Features</a></li>
         <li><a href="../index.html#how-it-works" data-i18n="nav_how">How It Works</a></li>
         <li><a href="../index.html#platforms" data-i18n="nav_platforms">Platforms</a></li>
+        <li><a href="../index.html#privacy-security" data-i18n="nav_security">Security</a></li>
         <li><a href="support.html" data-i18n="nav_support">Support</a></li>
         <li><a href="privacy.html" data-i18n="nav_privacy">Privacy</a></li>
         <li>
@@ -28,6 +29,12 @@
             <button class="lang-btn active" data-lang="en" role="radio" aria-checked="true">EN</button>
             <button class="lang-btn" data-lang="th" role="radio" aria-checked="false">TH</button>
           </div>
+        </li>
+        <li>
+          <button class="theme-toggle" aria-label="Toggle theme" role="switch" aria-checked="false">
+            <span class="theme-toggle-option active" data-theme-value="light">☀️</span>
+            <span class="theme-toggle-option" data-theme-value="dark">🌙</span>
+          </button>
         </li>
       </ul>
       <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
@@ -45,7 +52,7 @@
         <p data-i18n="support_intro">We're here to help you get the most out of iTemSpot. Find answers to common questions below or reach out to us directly.</p>
 
         <h2 data-i18n="support_getting_started">Getting Started</h2>
-        <p data-i18n="support_getting_started_text">After downloading iTemSpot, you'll be guided through a quick onboarding tutorial that covers all the key features. You can always replay this tutorial from Settings > Show Tutorial Again.</p>
+        <p data-i18n="support_getting_started_text">After downloading iTemSpot, you'll be guided through a 10-screen onboarding tutorial covering AR scanning, item photography, search, QR codes, Apple Watch, widgets, Spotlight, and organization. You can replay it anytime from Settings > Show Tutorial Again.</p>
 
         <h2 data-i18n="support_faq">Frequently Asked Questions</h2>
 
@@ -53,7 +60,7 @@
         <p data-i18n="support_faq_a1">Tap the "+" button on the Items tab. You can photograph items, add notes and tags, and assign them to a location. For rapid entry, use Quick Add mode to photograph multiple items in succession.</p>
 
         <h3 data-i18n="support_faq_q2">How does AR scanning work?</h3>
-        <p data-i18n="support_faq_a2">Navigate to the AR tab and point your camera at a room. The app detects surfaces automatically. Tap on any surface to place a location anchor, then assign items to that anchor. When you need to find an item, the AR view shows directional arrows and distance to guide you.</p>
+        <p data-i18n="support_faq_a2">Go to the AR scan view and point your camera at a room. The app detects horizontal and vertical surfaces automatically. Tap on any surface to place a location anchor and name it. When you need to find an item, the AR locate view shows directional arrows, distance, and proximity haptics to guide you.</p>
 
         <h3 data-i18n="support_faq_q3">Does the app work offline?</h3>
         <p data-i18n="support_faq_a3">Yes. iTemSpot works fully offline. All data is stored locally on your device. When you're back online, changes sync automatically via iCloud.</p>
@@ -67,13 +74,22 @@
         <h3 data-i18n="support_faq_q6">How do I recover deleted items?</h3>
         <p data-i18n="support_faq_a6">Deleted items are moved to Trash and kept for 30 days. Go to Settings > Trash to view and restore deleted items before they are permanently removed.</p>
 
+        <h3 data-i18n="support_faq_q7">How does the Privacy Vault work?</h3>
+        <p data-i18n="support_faq_a7">Set up a vault in Settings with a four-digit passcode, strong password, or biometric-only authentication. Then lock or hide items and locations. Locked items conceal details until authenticated. Hidden items are completely invisible outside the vault — including in search, widgets, Watch, and Spotlight.</p>
+
+        <h3 data-i18n="support_faq_q8">What is the Spatial 2D Map?</h3>
+        <p data-i18n="support_faq_a8">The Spatial Map shows a bird's-eye view of your scanned rooms with item markers projected from AR anchor data. You can pan, zoom, and tap markers to navigate to location details.</p>
+
         <h2 data-i18n="support_troubleshooting">Troubleshooting</h2>
 
         <h3 data-i18n="support_trouble_q1">AR scanning isn't detecting surfaces</h3>
-        <p data-i18n="support_trouble_a1">Ensure you have adequate lighting and slowly move your device to help ARKit map the environment. Avoid plain, featureless surfaces.</p>
+        <p data-i18n="support_trouble_a1">Ensure you have adequate lighting and slowly move your device to help ARKit map the environment. Avoid plain, featureless surfaces. LiDAR-equipped devices provide enhanced scanning.</p>
 
         <h3 data-i18n="support_trouble_q2">Items aren't syncing across devices</h3>
         <p data-i18n="support_trouble_a2">Check that iCloud is enabled in your device settings and that you're signed into the same Apple ID on all devices. Check Settings > Sync Status for details.</p>
+
+        <h3 data-i18n="support_trouble_q3">Voice search isn't working</h3>
+        <p data-i18n="support_trouble_a3">Make sure you've granted microphone and speech recognition permissions. Go to iOS Settings > iTemSpot to check. Voice search tries your current locale first, then falls back to English.</p>
 
         <div class="contact-card" id="contact">
           <h3 data-i18n="support_contact_title">Contact Us</h3>
@@ -89,7 +105,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-bottom" style="border-top: none; padding-top: 0;">
-        <span data-i18n="footer_copyright">© 2025 iTemSpot. All rights reserved.</span>
+        <span data-i18n="footer_copyright">© 2026 iTemSpot. All rights reserved.</span>
         <div class="lang-toggle" role="radiogroup" aria-label="Language">
           <button class="lang-btn active" data-lang="en" role="radio" aria-checked="true">EN</button>
           <button class="lang-btn" data-lang="th" role="radio" aria-checked="false">TH</button>

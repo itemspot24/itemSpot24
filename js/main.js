@@ -1,5 +1,6 @@
 // ===== iTemSpot Main JS =====
 document.addEventListener('DOMContentLoaded', () => {
+  initTheme();
   initI18n();
 
   // Navbar scroll effect
@@ -26,6 +27,14 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => setLang(btn.dataset.lang));
   });
 
+  // Theme toggle
+  document.querySelectorAll('.theme-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'light';
+      setTheme(current === 'light' ? 'dark' : 'light');
+    });
+  });
+
   // Scroll-to-top button
   const scrollBtn = document.querySelector('.scroll-top');
   window.addEventListener('scroll', () => {
@@ -46,3 +55,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 });
+
+// ===== Theme =====
+function initTheme() {
+  const saved = localStorage.getItem('itemspot-theme') || 'light';
+  setTheme(saved);
+}
+
+function setTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  localStorage.setItem('itemspot-theme', theme);
+  document.querySelectorAll('.theme-toggle').forEach(btn => {
+    btn.setAttribute('aria-checked', theme === 'dark');
+    btn.querySelectorAll('.theme-toggle-option').forEach(opt => {
+      opt.classList.toggle('active', opt.dataset.themeValue === theme);
+    });
+  });
+  // Update meta theme-color
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.content = theme === 'dark' ? '#111827' : '#0D9488';
+}
