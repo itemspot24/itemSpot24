@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>iTemSpot — Know Where Everything Is</title>
-  <meta name="description" content="Catalog, organize, and locate your belongings with AR-powered room scanning. Available on iPhone, Apple Watch, and iPad.">
+  <meta name="description" content="Catalog, organize, and locate your belongings with AR-powered room scanning, voice search, QR codes, and privacy vault. Available on iPhone, iPad, Apple Watch, and home screen widgets.">
   <meta name="theme-color" content="#0D9488">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📦</text></svg>">
+  <link rel="icon" type="image/jpeg" href="images/itemSpot Icon.jpg">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,12 +15,13 @@
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo" aria-label="iTemSpot Home">
-        <span>📦</span> iTemSpot
+        <img src="images/itemSpot Icon.jpg" alt="iTemSpot icon"> iTemSpot
       </a>
       <ul class="nav-links">
         <li><a href="#features" data-i18n="nav_features">Features</a></li>
         <li><a href="#how-it-works" data-i18n="nav_how">How It Works</a></li>
         <li><a href="#platforms" data-i18n="nav_platforms">Platforms</a></li>
+        <li><a href="#privacy-security" data-i18n="nav_security">Security</a></li>
         <li><a href="docs/support.html" data-i18n="nav_support">Support</a></li>
         <li><a href="docs/privacy.html" data-i18n="nav_privacy">Privacy</a></li>
         <li>
@@ -28,6 +29,12 @@
             <button class="lang-btn active" data-lang="en" role="radio" aria-checked="true">EN</button>
             <button class="lang-btn" data-lang="th" role="radio" aria-checked="false">TH</button>
           </div>
+        </li>
+        <li>
+          <button class="theme-toggle" aria-label="Toggle theme" role="switch" aria-checked="false">
+            <span class="theme-toggle-option active" data-theme-value="light">☀️</span>
+            <span class="theme-toggle-option" data-theme-value="dark">🌙</span>
+          </button>
         </li>
       </ul>
       <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
@@ -41,7 +48,7 @@
     <div class="container">
       <div class="hero-badge" data-i18n="hero_badge">📦 Smart Home Inventory</div>
       <h1 data-i18n="hero_title">Know Where Everything Is.</h1>
-      <p class="hero-subtitle" data-i18n="hero_subtitle">Catalog, organize, and locate your belongings with AR-powered room scanning. Never lose track of your stuff again.</p>
+      <p class="hero-subtitle" data-i18n="hero_subtitle">Catalog, organize, and locate your belongings with AR-powered room scanning, voice search, and a privacy vault. Never lose track of your stuff again.</p>
       <div class="hero-cta">
         <a href="#" class="btn btn-primary" data-i18n="hero_cta_download">
           Download on App Store
@@ -89,32 +96,47 @@
         <div class="feature-card fade-in">
           <div class="feature-icon">📱</div>
           <h3 data-i18n="feat_ar_title">AR Room Scanning</h3>
-          <p data-i18n="feat_ar_desc">Point your camera at any room to scan surfaces and place item anchors. Find stored items with real-time directional arrows and distance tracking.</p>
+          <p data-i18n="feat_ar_desc">Scan rooms with ARKit to detect surfaces and place location anchors. Find items with real-time directional arrows, distance tracking, and proximity haptics.</p>
         </div>
         <div class="feature-card fade-in">
           <div class="feature-icon">🔍</div>
-          <h3 data-i18n="feat_search_title">Instant Search</h3>
-          <p data-i18n="feat_search_desc">Find any item in milliseconds. Search by name, tags, or location. Results appear as you type, and items are indexed in Spotlight.</p>
+          <h3 data-i18n="feat_search_title">Search &amp; Voice</h3>
+          <p data-i18n="feat_search_desc">Find any item instantly by name, tags, or location. Use voice search with speech recognition, or find items system-wide via Spotlight integration.</p>
         </div>
         <div class="feature-card fade-in">
           <div class="feature-icon">📷</div>
           <h3 data-i18n="feat_qr_title">QR Code System</h3>
-          <p data-i18n="feat_qr_desc">Generate and print QR codes for items and locations. Scan to instantly navigate to any item or see everything stored at a location.</p>
+          <p data-i18n="feat_qr_desc">Generate, print, and scan QR codes for items and locations. Batch generate QR grids for entire collections. Scan to navigate instantly.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">📂</div>
+          <h3 data-i18n="feat_folders_title">Folders &amp; Hierarchy</h3>
+          <p data-i18n="feat_folders_desc">Organize items into folders and build hierarchical locations with unlimited nesting. See full breadcrumb paths like "Home &gt; Kitchen &gt; Top Shelf".</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">🔒</div>
+          <h3 data-i18n="feat_vault_title">Privacy Vault</h3>
+          <p data-i18n="feat_vault_desc">Lock or hide sensitive items with passcode, password, or Face ID. Hidden items are invisible everywhere — search, widgets, Watch, and Spotlight.</p>
         </div>
         <div class="feature-card fade-in">
           <div class="feature-icon">☁️</div>
           <h3 data-i18n="feat_cloud_title">iCloud Sync</h3>
-          <p data-i18n="feat_cloud_desc">All your items sync seamlessly across devices via CloudKit. Share with family members and always stay up to date.</p>
+          <p data-i18n="feat_cloud_desc">All items, locations, and folders sync seamlessly across your devices via CloudKit. Works fully offline and syncs automatically when back online.</p>
         </div>
         <div class="feature-card fade-in">
-          <div class="feature-icon">⌚</div>
-          <h3 data-i18n="feat_watch_title">Apple Watch</h3>
-          <p data-i18n="feat_watch_desc">Search and browse your inventory right from your wrist. Mark items as found and get real-time sync with your iPhone.</p>
+          <div class="feature-icon">🗺️</div>
+          <h3 data-i18n="feat_spatial_title">Spatial 2D Map</h3>
+          <p data-i18n="feat_spatial_desc">Bird's-eye view of your rooms with item markers projected from AR data. Pan, zoom, and tap markers to navigate to locations.</p>
         </div>
         <div class="feature-card fade-in">
-          <div class="feature-icon">🧩</div>
-          <h3 data-i18n="feat_widgets_title">Home Widgets</h3>
-          <p data-i18n="feat_widgets_desc">Quick access to recent items and search right from your home screen. Available in small, medium, and large sizes.</p>
+          <div class="feature-icon">⚡</div>
+          <h3 data-i18n="feat_batch_title">Batch Operations</h3>
+          <p data-i18n="feat_batch_desc">Select multiple items to delete, move, or protect in bulk. Quick Add mode lets you photograph and catalog items rapidly in succession.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">🗑️</div>
+          <h3 data-i18n="feat_trash_title">Trash &amp; Undo</h3>
+          <p data-i18n="feat_trash_desc">Deleted items are kept for 30 days with easy restore. Undo snackbars appear after every destructive action so nothing is lost by accident.</p>
         </div>
       </div>
     </div>
@@ -126,23 +148,28 @@
       <div class="section-header fade-in">
         <div class="section-label" data-i18n="how_label">How It Works</div>
         <h2 class="section-title" data-i18n="how_title">Get Started in Minutes</h2>
-        <p class="section-subtitle" data-i18n="how_subtitle">Three simple steps to organize your entire space.</p>
+        <p class="section-subtitle" data-i18n="how_subtitle">Four simple steps to organize your entire space.</p>
       </div>
       <div class="steps">
         <div class="step fade-in">
           <div class="step-icon">📐</div>
           <h3 data-i18n="step1_title">Scan Your Room</h3>
-          <p data-i18n="step1_desc">Use AR to scan any room and detect surfaces automatically.</p>
+          <p data-i18n="step1_desc">Use AR to scan any room and detect surfaces. Place location anchors where you store things.</p>
         </div>
         <div class="step fade-in">
           <div class="step-icon">📸</div>
           <h3 data-i18n="step2_title">Add Your Items</h3>
-          <p data-i18n="step2_desc">Photograph items and assign them to locations with tags.</p>
+          <p data-i18n="step2_desc">Photograph items, add tags and notes, and assign them to locations. Use Quick Add for rapid batch entry.</p>
+        </div>
+        <div class="step fade-in">
+          <div class="step-icon">📂</div>
+          <h3 data-i18n="step3_title">Organize</h3>
+          <p data-i18n="step3_desc">Group items into folders, build location hierarchies, and print QR labels for physical spaces.</p>
         </div>
         <div class="step fade-in">
           <div class="step-icon">🎯</div>
-          <h3 data-i18n="step3_title">Find Anything</h3>
-          <p data-i18n="step3_desc">Search, scan QR codes, or use AR to locate items instantly.</p>
+          <h3 data-i18n="step4_title">Find Anything</h3>
+          <p data-i18n="step4_desc">Search by text or voice, scan QR codes, or use AR with directional guidance to locate items in real space.</p>
         </div>
       </div>
     </div>
@@ -159,23 +186,51 @@
       <div class="platforms-grid">
         <div class="platform-card fade-in">
           <div class="platform-icon">📱</div>
-          <h3 data-i18n="plat_iphone_title">iPhone</h3>
-          <p data-i18n="plat_iphone_desc">Full-featured app with AR scanning, photo management, and complete item organization.</p>
+          <h3 data-i18n="plat_iphone_title">iPhone &amp; iPad</h3>
+          <p data-i18n="plat_iphone_desc">Full-featured universal app with AR scanning, photo management, voice search, privacy vault, and complete item organization.</p>
         </div>
         <div class="platform-card fade-in">
           <div class="platform-icon">⌚</div>
           <h3 data-i18n="plat_watch_title">Apple Watch</h3>
-          <p data-i18n="plat_watch_desc">Quick search and browse your inventory. Mark items as found right from your wrist.</p>
+          <p data-i18n="plat_watch_desc">Search and browse your inventory from your wrist. View folder organization and mark items as found with real-time sync.</p>
         </div>
         <div class="platform-card fade-in">
-          <div class="platform-icon">📱</div>
-          <h3 data-i18n="plat_widgets_title">iPad</h3>
-          <p data-i18n="plat_widgets_desc">Full iPad experience with large-screen layouts, multitasking support, and detailed inventory views.</p>
+          <div class="platform-icon">🧩</div>
+          <h3 data-i18n="plat_widgets_title">Home Widgets</h3>
+          <p data-i18n="plat_widgets_desc">Recent items and quick search widgets for your home screen. Available in small, medium, and large sizes with deep link navigation.</p>
         </div>
         <div class="platform-card fade-in">
           <div class="platform-icon">🔎</div>
           <h3 data-i18n="plat_spotlight_title">Spotlight Search</h3>
-          <p data-i18n="plat_spotlight_desc">Find your items directly from iOS home screen search without opening the app.</p>
+          <p data-i18n="plat_spotlight_desc">Find your items directly from the iOS home screen search. Items are indexed with names, tags, notes, and location paths.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy & Security -->
+  <section class="privacy-security" id="privacy-security">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-label" data-i18n="security_label">Privacy &amp; Security</div>
+        <h2 class="section-title" data-i18n="security_title">Your Data, Your Control</h2>
+        <p class="section-subtitle" data-i18n="security_subtitle">No analytics, no tracking, no third-party servers. Everything stays on your devices and in your private iCloud.</p>
+      </div>
+      <div class="security-grid">
+        <div class="security-card fade-in">
+          <div class="security-icon">🔐</div>
+          <h3 data-i18n="sec_vault_title">Hidden Vault</h3>
+          <p data-i18n="sec_vault_desc">Protect sensitive items with a four-digit passcode, strong password, or biometric authentication. Hidden items are completely invisible outside the vault.</p>
+        </div>
+        <div class="security-card fade-in">
+          <div class="security-icon">🛡️</div>
+          <h3 data-i18n="sec_lock_title">Lock &amp; Hide</h3>
+          <p data-i18n="sec_lock_desc">Three protection levels: none, locked (details concealed), or hidden (invisible everywhere). Applied per-item and per-location with cascading visibility.</p>
+        </div>
+        <div class="security-card fade-in">
+          <div class="security-icon">☁️</div>
+          <h3 data-i18n="sec_private_title">Private iCloud</h3>
+          <p data-i18n="sec_private_desc">All data stored in your private CloudKit database. No PII transmitted to external servers. Vault credentials secured in iOS Keychain.</p>
         </div>
       </div>
     </div>
@@ -195,8 +250,8 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-brand">
-          <a href="index.html" class="nav-logo"><span>📦</span> iTemSpot</a>
-          <p data-i18n="footer_desc">Smart home inventory management with AR-powered item tracking.</p>
+          <a href="index.html" class="nav-logo"><img src="images/itemSpot Icon.jpg" alt="iTemSpot icon"> iTemSpot</a>
+          <p data-i18n="footer_desc">Smart home inventory management with AR-powered item tracking, voice search, and privacy vault.</p>
         </div>
         <div class="footer-col">
           <h4 data-i18n="footer_product">Product</h4>
@@ -220,7 +275,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span data-i18n="footer_copyright">© 2025 iTemSpot. All rights reserved.</span>
+        <span data-i18n="footer_copyright">© 2026 iTemSpot. All rights reserved.</span>
         <div class="lang-toggle" role="radiogroup" aria-label="Language">
           <button class="lang-btn active" data-lang="en" role="radio" aria-checked="true">EN</button>
           <button class="lang-btn" data-lang="th" role="radio" aria-checked="false">TH</button>
