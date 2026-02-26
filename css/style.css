@@ -177,35 +177,44 @@ img { max-width: 100%; height: auto; display: block; }
 
 [data-theme="dark"] .btn-secondary { border-color: rgba(255,255,255,0.1); }
 
-.hero-phones {
-  display: flex; justify-content: center; align-items: flex-end; gap: 20px;
-  perspective: 1000px; max-width: 700px; margin: 0 auto;
+/* ===== Hero Devices Layout ===== */
+.hero-devices {
+  position: relative;
+  max-width: 780px;
+  margin: 0 auto;
+  aspect-ratio: 1.45 / 1;
 }
 
-.phone-mockup {
-  width: 220px; background: var(--surface-card); border-radius: 32px;
-  box-shadow: var(--shadow-xl); overflow: hidden;
-  border: 6px solid #1a1a2e; position: relative;
-  transition: transform 0.4s;
-}
-.phone-mockup:hover { transform: translateY(-8px); }
-.phone-mockup.center { width: 240px; z-index: 2; }
-.phone-mockup.side { opacity: 0.9; transform: scale(0.92); }
-
-.phone-screen {
-  aspect-ratio: 9/19.5; background: linear-gradient(180deg, var(--primary-dark) 0%, var(--accent) 40%, var(--primary-light) 100%);
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  padding: 20px; color: #fff; text-align: center;
+.device img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.phone-screen .mock-icon { font-size: 3rem; margin-bottom: 12px; }
-.phone-screen .mock-title { font-size: 0.9rem; font-weight: 700; margin-bottom: 6px; }
-.phone-screen .mock-subtitle { font-size: 0.7rem; opacity: 0.8; }
+.device {
+  position: absolute;
+  filter: drop-shadow(0 12px 30px rgba(0,0,0,0.2));
+}
 
-.phone-notch {
-  position: absolute; top: 0; left: 50%; transform: translateX(-50%);
-  width: 120px; height: 28px; background: #1a1a2e;
-  border-radius: 0 0 18px 18px; z-index: 3;
+.device-ipad {
+  width: 75%;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.device-iphone {
+  width: 17%;
+  right: 12%;
+  bottom: 0;
+  z-index: 3;
+}
+
+.device-watch {
+  width: 12%;
+  left: 56%;
+  bottom: 0;
+  z-index: 2;
 }
 
 /* ===== Features Section ===== */
@@ -237,6 +246,7 @@ img { max-width: 100%; height: auto; display: block; }
   background: rgba(13,148,136,0.1); display: flex; align-items: center; justify-content: center;
   font-size: 1.5rem; margin-bottom: 20px;
 }
+.feature-icon-img { width: 32px; height: 32px; object-fit: contain; }
 
 .feature-card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 10px; }
 .feature-card p { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.8; }
@@ -273,7 +283,8 @@ img { max-width: 100%; height: auto; display: block; }
 
 [data-theme="dark"] .platform-card { border-color: rgba(255,255,255,0.06); }
 
-.platform-icon { font-size: 2.5rem; margin-bottom: 16px; }
+.platform-icon { font-size: 2.5rem; margin-bottom: 16px; display: flex; justify-content: center; }
+.platform-icon-img { width: 56px; height: 56px; object-fit: contain; }
 .platform-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
 .platform-card p { color: var(--text-secondary); font-size: 0.9rem; }
 
@@ -387,10 +398,6 @@ img { max-width: 100%; height: auto; display: block; }
   }
 
   .hero { padding: 120px 0 60px; }
-  .hero-phones { gap: 10px; }
-  .phone-mockup { width: 140px; border-width: 4px; border-radius: 24px; }
-  .phone-mockup.center { width: 160px; }
-  .phone-notch { width: 80px; height: 20px; border-radius: 0 0 12px 12px; }
 
   .footer-inner { grid-template-columns: 1fr; gap: 30px; }
   .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
@@ -401,8 +408,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 @media (max-width: 480px) {
-  .hero-phones .side { display: none; }
-  .phone-mockup.center { width: 200px; }
+  .hero-devices { max-width: 320px; }
 }
 
 /* ===== App Store Badge ===== */
@@ -459,5 +465,3 @@ html[lang="th"] .nav-links a { line-height: 1.8; }
 html[lang="th"] .btn { padding: 16px 32px; line-height: 1.8; }
 html[lang="th"] .cta-section p { line-height: 2; }
 html[lang="th"] .footer-brand p { line-height: 2; }
-html[lang="th"] .phone-screen .mock-title,
-html[lang="th"] .phone-screen .mock-subtitle { line-height: 1.8; }
